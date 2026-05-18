@@ -6,4 +6,6 @@ httpx==0.27.0
 pymysql==1.1.1
 DBUtils==3.1.0
 python-dotenv==1.0.1
-cryptography==42.0.8git
+cryptography==42.0.8
+PyJWT==2.8.0
+passlib==1.7.4
