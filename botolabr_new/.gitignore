@@ -1,0 +1,9 @@
+backend/.env
+backend/botolabr.db
+__pycache__/
+*.pyc
+*.pyc
+node_modules/
+frontend/dist/
+.DS_Store
+.env.local
