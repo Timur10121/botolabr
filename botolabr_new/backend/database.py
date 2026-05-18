@@ -14,17 +14,17 @@ from dbutils.pooled_db import PooledDB
 
 # ── Конфигурация из переменных окружения ──────────────────────────────────
 DB_CONFIG = {
-    "host":     os.getenv("DB_HOST"),
-    "port":     int(os.getenv("DB_PORT")),
-    "user":     os.getenv("DB_USER"),
-    "password": os.getenv("DB_PASSWORD"),
-    "database": os.getenv("DB_NAME"),
+    "host":     os.getenv("DB_HOST",     "localhost"),
+    "port":     int(os.getenv("DB_PORT", "3306")),
+    "user":     os.getenv("DB_USER",     "botolabr"),
+    "password": os.getenv("DB_PASSWORD", ""),
+    "database": os.getenv("DB_NAME",     "botolabr"),
     "charset":  "utf8mb4",
     "cursorclass": pymysql.cursors.DictCursor,
     "autocommit": False,
 }
 
-# ── Connection pool (открываем соединения один раз, переиспользуем) ────────
+# ── Connection pool ────────────────────────────────────────────────────────
 _pool: PooledDB | None = None
 
 def get_pool() -> PooledDB:
@@ -46,13 +46,6 @@ def get_pool() -> PooledDB:
 
 @contextmanager
 def get_db():
-    """
-    Контекстный менеджер для работы с БД.
-    Автоматически делает commit или rollback.
-    Использование:
-        with get_db() as db:
-            db.execute("SELECT ...")
-    """
     pool = get_pool()
     conn = pool.connection()
     try:
@@ -72,6 +65,8 @@ def init_db():
     """Создаёт все таблицы если их нет. Безопасно запускать при каждом старте."""
 
     statements = [
+        "SET SESSION sql_mode = ''",
+
         """
         CREATE TABLE IF NOT EXISTS users (
             id         INT AUTO_INCREMENT PRIMARY KEY,
@@ -115,8 +110,8 @@ def init_db():
             name        VARCHAR(255) NOT NULL,
             description TEXT         DEFAULT NULL,
             `trigger`   VARCHAR(255) DEFAULT '',
-            nodes       LONGTEXT     DEFAULT '[]',
-            edges       LONGTEXT     DEFAULT '[]',
+            nodes       LONGTEXT     NULL,
+            edges       LONGTEXT     NULL,
             active      TINYINT(1)   DEFAULT 0,
             created_at  INT          DEFAULT 0,
             updated_at  INT          DEFAULT 0,
@@ -132,7 +127,7 @@ def init_db():
             chat_id      BIGINT       NOT NULL,
             scenario_id  INT          NOT NULL,
             current_node VARCHAR(64)  NOT NULL,
-            data         LONGTEXT     DEFAULT '{}',
+            data         LONGTEXT     NULL,
             updated_at   INT          DEFAULT 0,
             UNIQUE KEY uq_bot_chat (bot_id, chat_id),
             FOREIGN KEY (bot_id)      REFERENCES bots(id)      ON DELETE CASCADE,
