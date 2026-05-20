@@ -37,11 +37,11 @@ async def _keepalive():
         try:
             if SELF_URL:
                 async with httpx.AsyncClient() as client:
-                    await client.get(f"{SELF_URL}/api/health", timeout=2)
+                    await client.get(f"{SELF_URL}/api/health", timeout=10)
                 print("[keepalive] ping ok")
         except Exception as e:
             print(f"[keepalive] ping failed: {e}")
-        await asyncio.sleep(120)
+        await asyncio.sleep(30)
  
 @asynccontextmanager
 async def lifespan(app: FastAPI):
