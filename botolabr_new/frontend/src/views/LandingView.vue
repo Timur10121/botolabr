@@ -337,9 +337,21 @@ const faqItems = [
 </script>
 
 <style scoped>
-/* =============================================
-   RESET
-============================================= */
+@font-face {
+    font-family: 'Lobelia';
+    src: url('../frontend/fonts/Lobelia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NauryzRedKeds';
+    src: url('../frontend/fonts/NauryzRedKeds.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gogol';
+    src: url('../frontend/fonts/gogol_regular.otf') format('truetype');
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 .landing {

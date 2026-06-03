@@ -178,6 +178,21 @@ function onNodeDelete(nodeId) {
 </script>
 
 <style scoped>
+@font-face {
+    font-family: 'Lobelia';
+    src: url('../frontend/fonts/Lobelia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NauryzRedKeds';
+    src: url('../frontend/fonts/NauryzRedKeds.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gogol';
+    src: url('../frontend/fonts/gogol_regular.otf') format('truetype');
+}
+
 .canvas-wrap {
   flex: 1;
   height: 100%;

@@ -201,6 +201,21 @@ function removeBtn(i) {
 </script>
 
 <style scoped>
+@font-face {
+    font-family: 'Lobelia';
+    src: url('../frontend/fonts/Lobelia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NauryzRedKeds';
+    src: url('../frontend/fonts/NauryzRedKeds.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gogol';
+    src: url('../frontend/fonts/gogol_regular.otf') format('truetype');
+}
+
 .node-card {
   background: var(--green-light);
   border: 2px solid var(--green-light);
