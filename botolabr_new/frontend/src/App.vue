@@ -9,13 +9,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --pink-dark:   #C45077;
+  --pink-dark:   #FB6E17;
   --green-light: #ADF36C;
   --green-dark:  #0B5000;
   --bg:          #FEDAEC;
-  --surface:     #E88696;
-  --surface2:    #F4BDC5;
-  --border:      #C45077;
+  --surface:     #FA7F33;
+  --surface2:    #FB9250;
+  --border:      #FB6E17;
   --text:        #F6FEDE;
   --text-muted:  #ADF36C;
   --red:         #ef4444;
