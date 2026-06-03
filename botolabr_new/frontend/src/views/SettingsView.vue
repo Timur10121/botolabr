@@ -338,20 +338,6 @@ async function changePassword() {
 </script>
 
 <style scoped>
-@font-face {
-    font-family: 'Lobelia';
-    src: url('../frontend/fonts/Lobelia.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'NauryzRedKeds';
-    src: url('../frontend/fonts/NauryzRedKeds.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Gogol';
-    src: url('../frontend/fonts/gogol_regular.otf') format('truetype');
-}
 .settings-page {
   padding: 32px 36px;
   max-width: 960px;
