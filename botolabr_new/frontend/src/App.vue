@@ -13,8 +13,8 @@
   --green-light: #ADF36C;
   --green-dark:  #0B5000;
   --bg:          #FEDAEC;
-  --surface:     #FA7F33;
-  --surface2:    #FB9250;
+  --surface:     #FB9250;
+  --surface2:    #FDA36C;
   --border:      #FB6E17;
   --text:        #F6FEDE;
   --text-muted:  #ADF36C;
