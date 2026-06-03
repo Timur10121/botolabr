@@ -1,5 +1,8 @@
 <template>
   <AppLayout>
+    <link rel="stylesheet" href="https://fonts-online.ru/css/lobelia">
+    <link rel="stylesheet" href="https://fonts-online.ru/css/nauryzredkeds">
+    <link rel="stylesheet" href="https://fonts-online.ru/css/gogol">
     <div class="bots-page">
 
       <!-- Header -->
