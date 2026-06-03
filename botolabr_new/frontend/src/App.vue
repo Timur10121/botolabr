@@ -1,4 +1,8 @@
 <template>
+  <link rel="stylesheet" href="https://fonts-online.ru/css/lobelia">
+  <link rel="stylesheet" href="https://fonts-online.ru/css/nauryzredkeds">
+  <link rel="stylesheet" href="https://fonts-online.ru/css/gogol">
+  
   <router-view />
 </template>
 
