@@ -8,6 +8,21 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+@font-face {
+    font-family: 'Lobelia';
+    src: url('../frontend/fonts/Lobelia.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NauryzRedKeds';
+    src: url('../frontend/fonts/NauryzRedKeds.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gogol';
+    src: url('../frontend/fonts/gogol_regular.otf') format('truetype');
+}
+
 :root {
   --pink-dark:   #FB6E17;
   --green-light: #ADF36C;
