@@ -6,6 +6,27 @@
 </script>
 
 <style>
+@font-face {
+  font-family: 'Lobelia';
+  src: url('/fonts/Lobelia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NauryzRedKeds';
+  src: url('/fonts/NauryzRedKeds.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gogol';
+  src: url('/fonts/gogol_regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
