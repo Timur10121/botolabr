@@ -984,7 +984,6 @@ const faqItems = [
   color: #000000;
   line-height: 1.6;
   letter-spacing: 1px;
-  min-height: calc(1.6em * 3);
 }
 
 
