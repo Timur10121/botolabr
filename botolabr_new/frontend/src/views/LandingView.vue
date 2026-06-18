@@ -911,7 +911,7 @@ const faqItems = [
   font-weight: 400;
   font-size: clamp(16px, 3vw, 28px);
   color: #F6FEDE;
-  line-height: 2;
+  line-height: 4;
   margin: 0 0 24px 0;
   letter-spacing: 1px;
 }
@@ -973,7 +973,7 @@ const faqItems = [
 .how__card-title {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  font-size: clamp(16px, 2.5 vw, 24px);
+  font-size: clamp(20px, 2 vw, 24px);
   color: #0B5000;
   letter-spacing: 1px;
 }
