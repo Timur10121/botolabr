@@ -246,11 +246,11 @@ onMounted(load)
   gap: 16px;
 }
 .stat-icon {
-  width: 36px;
-  height: 36px;
+  width: 60px;
+  height: 60px;
 }
 .stat-value {
-  font-size: clamp(26px, 2vw, 32px);
+  font-size: clamp(26px, 2vw, 36px);
   font-weight: 700;
   line-height: 1;
   color: var(--green-dark);
