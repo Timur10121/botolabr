@@ -9,10 +9,20 @@
 
       <nav class="sidebar-nav">
         <router-link to="/dashboard" class="nav-link">
-          <span class="nav-icon">🏠</span> Главная
+          <img
+            src="/image/house.svg"
+            alt=""
+            class="nav-icon"
+          />
+          <span>Главная</span>
         </router-link>
         <router-link to="/bots" class="nav-link">
-          <span class="nav-icon">🤖</span> Боты
+          <img
+            src="/image/robot.svg"
+            alt=""
+            class="nav-icon"
+          />
+          <span>Боты</span>
         </router-link>
       </nav>
 
