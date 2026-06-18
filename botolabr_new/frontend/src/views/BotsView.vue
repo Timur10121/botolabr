@@ -84,7 +84,7 @@
                 class="btn-icon"
               />
               Сценарии
-            <button
+            </button>
               class="btn btn-secondary btn-sm"
               @click="toggleWebhookForm(bot)"
             >
