@@ -94,7 +94,9 @@
           </div>
           <div v-else class="bot-list">
             <div v-for="b in bots" :key="b.id" class="bot-item">
-              <div class="bot-avatar">🤖</div>
+              <div class="bot-avatar">
+                <img src="/image/robot-face.svg" alt="Bot" />
+              </div>
               <div class="bot-info">
                 <div class="bot-name">@{{ b.bot_username }}</div>
                 <div class="bot-sub">{{ b.bot_name }}</div>
