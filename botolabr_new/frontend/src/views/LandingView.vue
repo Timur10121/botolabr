@@ -878,7 +878,7 @@ const faqItems = [
 ============================================= */
 .about {
   width: 100%;
-  background-color: #ADF36C;
+  background-color: #FB6E17;
   position: relative;
   overflow: hidden;
 }
@@ -946,7 +946,7 @@ const faqItems = [
 .how__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 60px;
+  gap: 80px 120px;
 }
 
 .how__card {
@@ -956,9 +956,9 @@ const faqItems = [
 }
 
 .how__card-icon {
-  width: clamp(40px, 12vw, 90px);
-  height: clamp(40px, 12vw, 90px);
-  min-width: clamp(40px, 12vw, 90px);
+  width: clamp(50px, 30vw, 150px);
+  height: clamp(50px, 30vw, 150px);
+  min-width: clamp(40px, 30vw, 150px);
   object-fit: contain;
   display: block;
 }
