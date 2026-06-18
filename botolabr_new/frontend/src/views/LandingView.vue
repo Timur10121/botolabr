@@ -257,10 +257,10 @@ const currentVariant = computed(() => variantContents[activeVariant.value])
 // ── Vozmozhnost tabs
 const activeVoz = ref('analitics')
 const vozmozhnostTabs = [
-  { id: 'analitics',   label: 'Аналитика',      icon: '/image/service.svg' },
-  { id: 'konstructor', label: 'Конструктор',     icon: '/image/infobiznes.svg' },
-  { id: 'dialog',      label: 'Диалоги',         icon: '/image/prodazhi.svg' },
-  { id: 'shablony',    label: 'Готовые решения', icon: '/image/messenger.svg' },
+  { id: 'analitics',   label: 'Аналитика',      icon: '/image/analitics.svg' },
+  { id: 'konstructor', label: 'Конструктор',     icon: '/image/konstructor.svg' },
+  { id: 'dialog',      label: 'Диалоги',         icon: '/image/dialogs.svg' },
+  { id: 'shablony',    label: 'Готовые решения', icon: '/image/shablony.svg' },
 ]
 const vozContents = {
   analitics: {
