@@ -123,8 +123,8 @@ input::placeholder, textarea::placeholder { color: var(--pink-dark); }
   animation: fadeIn .15s ease;
 }
 .modal {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: var(--pink-dark);
+  border: 1px solid var(--surface);
   border-radius: var(--radius);
   padding: 28px 32px;
   width: 100%; max-width: 440px;

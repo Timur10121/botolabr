@@ -44,8 +44,8 @@
             <div class="webhook-label">Webhook:</div>
             <div class="webhook-val">
               <span v-if="webhookMap[bot.id] === undefined" class="wh-unknown">Загрузка...</span>
-              <span v-else-if="webhookMap[bot.id]" class="wh-ok">✅ Активен</span>
-              <span v-else class="wh-none">⚪ Не установлен</span>
+              <span v-else-if="webhookMap[bot.id]" class="wh-ok">Активен</span>
+              <span v-else class="wh-none">Не установлен</span>
             </div>
           </div>
 
@@ -655,12 +655,12 @@ input::placeholder, textarea::placeholder { color: var(--green-dark); }
 
 /* Modal extras */
 .modal-hint {
-  font-size: clamp(12px, 2vw, 16px); font-family: 'Roboto slab', serif; color: var(--pink-dark); line-height: 1.6;
+  font-size: clamp(12px, 2vw, 16px); font-family: 'Roboto slab', serif; color: var(--text); line-height: 1.6;
   background: var(--surface2); border-radius: 8px; padding: 12px 14px;
   margin-bottom: 4px;
 }
 .modal-hint code {
-  background: var(--text); padding: 2px 6px; border-radius: 4px;
+  background: var(--pink-dark); padding: 2px 6px; border-radius: 4px;
   font-size: 13px;
 }
 
@@ -670,9 +670,9 @@ input::placeholder, textarea::placeholder { color: var(--green-dark); }
 }
 .bp-avatar { font-size: 28px; }
 .bp-name   { font-size: 15px; font-weight: 600; }
-.bp-user   { font-size: 13px; color: var(--text-muted); }
+.bp-user   { font-size: 13px; color: var(--text); }
 
-.field-hint { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+.field-hint { font-size: 12px; color: var(--text); margin-top: 4px; }
 
 .empty-state {
   text-align: center; padding: 40px;
