@@ -245,9 +245,12 @@ onMounted(load)
   align-items: center;
   gap: 16px;
 }
-.stat-icon { font-size: 28px; }
+.stat-icon {
+  width: 36px;
+  height: 36px;
+}
 .stat-value {
-  font-size: clamp(48px, 4vw, 60px);
+  font-size: clamp(26px, 2vw, 32px);
   font-weight: 700;
   line-height: 1;
   color: var(--green-dark);
