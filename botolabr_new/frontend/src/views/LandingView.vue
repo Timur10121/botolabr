@@ -986,7 +986,7 @@ const faqItems = [
   letter-spacing: 1px;
   min-height: calc(1.6em * 3);
 }
-}
+
 
 /* =============================================
    FAQ
