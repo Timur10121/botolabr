@@ -23,21 +23,27 @@
           </div>
         </div>
         <div class="stat-card">
-          <div class="stat-icon">📋</div>
+          <div class="stat-icon">
+            <img src="/image/file.svg"/>
+          </div>
           <div class="stat-body">
             <div class="stat-value">{{ stats.scenarios }}</div>
             <div class="stat-label">Сценариев создано</div>
           </div>
         </div>
         <div class="stat-card">
-          <div class="stat-icon">✅</div>
+          <div class="stat-icon">
+            <img src="/image/file-check.svg"/>
+          </div>
           <div class="stat-body">
             <div class="stat-value">{{ stats.active }}</div>
             <div class="stat-label">Активных сценариев</div>
           </div>
         </div>
         <div class="stat-card">
-          <div class="stat-icon">🔗</div>
+          <div class="stat-icon">
+            <img src="/image/robot-face.svg"/>
+          </div>
           <div class="stat-body">
             <div class="stat-value">{{ stats.botsActive }}</div>
             <div class="stat-label">Ботов активно</div>
@@ -241,7 +247,7 @@ onMounted(load)
 }
 .stat-icon { font-size: 28px; }
 .stat-value {
-  font-size: clamp(24px, 4vw, 36px);
+  font-size: clamp(48px, 4vw, 60px);
   font-weight: 700;
   line-height: 1;
   color: var(--green-dark);
