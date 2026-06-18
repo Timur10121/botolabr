@@ -68,16 +68,32 @@
 
           <!-- Scenarios count -->
           <div class="scenarios-count">
-            📋 {{ scenariosCount(bot.id) }} сценариев
+            <img src="/image/file.svg" alt="" class="scenarios-count__icon" />
+            {{ scenariosCount(bot.id) }} сценариев
           </div>
 
           <!-- Actions -->
           <div class="bot-actions">
-            <button class="btn btn-secondary btn-sm" @click="openScenarios(bot)">
-              📋 Сценарии
-            </button>
-            <button class="btn btn-secondary btn-sm" @click="toggleWebhookForm(bot)">
-              🔗 Webhook
+           <button
+              class="btn btn-secondary btn-sm"
+              @click="openScenarios(bot)"
+            >
+              <img
+                src="/image/link.svg"
+                alt=""
+                class="btn-icon"
+              />
+              Сценарии
+            <button
+              class="btn btn-secondary btn-sm"
+              @click="toggleWebhookForm(bot)"
+            >
+              <img
+                src="/image/robot-face.svg"
+                alt=""
+                class="btn-icon"
+              />
+              Webhook
             </button>
             <button
               v-if="webhookMap[bot.id]"
@@ -130,8 +146,16 @@
               >
                 {{ s.active ? 'Деактивировать' : 'Активировать' }}
               </button>
-              <button class="btn btn-secondary btn-sm" @click="editScenario(s)">
-                ✏️ Редактор
+              <button
+                class="btn btn-secondary btn-sm"
+                @click="editScenario(s)"
+              >
+                <img
+                  src="/image/pencil.svg"
+                  alt=""
+                  class="btn-icon"
+                />
+                Редактор
               </button>
               <button class="btn btn-danger btn-sm" @click="confirmDeleteScenario(s)">
                 🗑
@@ -171,7 +195,9 @@
 
           <div v-if="connectStep === 2">
             <div class="bot-preview">
-              <div class="bp-avatar">🤖</div>
+              <div class="bp-avatar">
+                <img src="/image/robot-face.svg"/>
+              </div>
               <div>
                 <div class="bp-name">{{ checkedBot.bot_name }}</div>
                 <div class="bp-user">@{{ checkedBot.bot_username }}</div>
@@ -185,7 +211,7 @@
             <div class="modal-actions">
               <button class="btn btn-secondary" @click="connectStep = 1">Назад</button>
               <button class="btn btn-primary" :disabled="connectLoading" @click="connectBot">
-                {{ connectLoading ? 'Подключение...' : '✅ Подключить' }}
+                {{ connectLoading ? 'Подключение...' : 'Подключить' }}
               </button>
             </div>
           </div>

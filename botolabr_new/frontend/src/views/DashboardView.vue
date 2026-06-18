@@ -247,8 +247,8 @@ onMounted(load)
 }
 .stat-icon { font-size: 28px; }
 .stat-icon img {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
 }
 .stat-value {
   font-size: clamp(26px, 2vw, 36px);
