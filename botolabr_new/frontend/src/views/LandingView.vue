@@ -297,7 +297,7 @@ const vozContents = {
     ],
   },
   shablony: {
-    image: '/image/sale.png',
+    image: '/image/reshenie.png',
     desc: 'Запустите бота за минуты с помощью проверенных шаблонов.',
     text: 'Просто выберите подходящий и настройте под себя.',
     list: [
@@ -530,8 +530,8 @@ const faqItems = [
   max-width: 250px;
   height: 45px;
   border-radius: 30px;
-  background: #0B5000;
-  border: 2px solid #0B5000;
+  background: #FB9250;
+  border: 2px solid #FB9250;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
@@ -542,7 +542,7 @@ const faqItems = [
   transition: all 0.3s ease;
 }
 .btn--about:hover {
-  background: #083d00;
+  background: #FDA36C;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(11,80,0,0.3);
 }
@@ -905,7 +905,7 @@ const faqItems = [
   font-family: 'NauryzRedKeds', serif;
   font-weight: 400;
   font-size: clamp(22px, 4vw, 36px);
-  color: #0B5000;
+  color: #F6FEDE;
   text-shadow: 10px 6px 8px rgba(31,63,22,0.3);
   margin: 40px 0 40px 0;
   line-height: 1;
@@ -914,7 +914,7 @@ const faqItems = [
 .about__text {
   font-family: 'NauryzRedKeds', serif;
   font-weight: 400;
-  font-size: clamp(16px, 3vw, 28px);
+  font-size: clamp(16px, 2.5vw, 24px);
   color: #F6FEDE;
   line-height: 4;
   margin: 0 0 24px 0;
