@@ -84,17 +84,17 @@
                 class="btn-icon"
               />
               Сценарии
-            </button>
-              class="btn btn-secondary btn-sm"
-              @click="toggleWebhookForm(bot)"
-            >
-              <img
-                src="/image/robot-face.svg"
-                alt=""
-                class="btn-icon"
-              />
-              Webhook
-            </button>
+          <button
+            class="btn btn-secondary btn-sm"
+            @click="toggleWebhookForm(bot)"
+          >
+            <img
+            src="/image/robot-face.svg"
+            alt=""
+            class="btn-icon"
+          />
+          Webhook
+        </button>
             <button
               v-if="webhookMap[bot.id]"
               class="btn btn-secondary btn-sm"
