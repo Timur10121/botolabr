@@ -722,8 +722,8 @@ const faqItems = [
 }
 
 .variant__content-image {
-  width: clamp(200px, 30vw, 500px);
-  height: clamp(150px, 22vw, 380px);
+  width: clamp(200px, 30vw, 400px);
+  height: clamp(200px, 22vw, 400px);
   background: #F6FEDE;
   background-size: cover;
   background-position: center;
