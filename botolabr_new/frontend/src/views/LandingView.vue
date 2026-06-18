@@ -179,10 +179,9 @@
 
     <!-- FOOTER -->
 <footer class="footer">
-  <div class="footer__container">
+  <div class="footer__row">
     <a class="footer__logo" @click.prevent="scrollToTop">
       <img
-        class="footer__logo-icon"
         src="/icons.svg"
         alt="Botolabr"
         @error="e => e.target.style.display='none'"
@@ -190,9 +189,9 @@
       <span class="footer__logo-text">BOTOLABR</span>
     </a>
 
-    <p class="footer__copyright">
-      © 2026 Botolabr. Все права защищены.
-    </p>
+    <div class="footer__copyright">
+      © 2026 Botolabr.
+    </div>
   </div>
 </footer>
 
@@ -952,7 +951,7 @@ const faqItems = [
 .how__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px 250px;
+  gap: 120px 450px;
 }
 
 .how__card {
@@ -1089,52 +1088,54 @@ const faqItems = [
 /* =============================================
    FOOTER
 ============================================= */
-/* =============================================
-   FOOTER
-============================================= */
 
 .footer {
   width: 100%;
-  background: #FB6E17;
-  border-top: 1px solid rgba(11, 80, 0, 0.15);
+  background: #F6FEDE;
+  border-top: 1px solid rgba(11,80,0,0.08);
+  padding: 10px 0;
 }
 
-.footer__container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 24px 5%;
+.footer__row {
+  width: 100%;
+  padding: 0 80px;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 
+/* Как .logo в хедере */
 .footer__logo {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
   cursor: pointer;
 }
 
-.footer__logo-icon {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
+.footer__logo img {
+  height: 50px;
+  width: auto;
 }
 
 .footer__logo-text {
   font-family: 'Lobelia', serif;
-  font-size: clamp(20px, 2vw, 28px);
+  font-size: 18px;
   color: #0B5000;
+  letter-spacing: 0.05em;
 }
 
+/* Как .header__buttons */
 .footer__copyright {
-  margin: 0;
+  margin-left: auto;
+
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  color: rgba(11, 80, 0, 0.7);
+  color: #0B5000;
+
+  display: flex;
+  align-items: center;
 }
 
 /* =============================================
