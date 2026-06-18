@@ -530,19 +530,19 @@ const faqItems = [
   max-width: 250px;
   height: 45px;
   border-radius: 30px;
-  background: #FB9250;
-  border: 2px solid #FB9250;
+  background: #F6FEDE;
+  border: 2px solid #F6FEDE;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
-  color: #F6FEDE;
+  color: #0B5000;
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .btn--about:hover {
-  background: #FDA36C;
+  background: #ADF36C;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(11,80,0,0.3);
 }
@@ -883,7 +883,7 @@ const faqItems = [
 ============================================= */
 .about {
   width: 100%;
-  background-color: #FB6E17;
+  background-color: #0B5000;
   position: relative;
   overflow: hidden;
 }
