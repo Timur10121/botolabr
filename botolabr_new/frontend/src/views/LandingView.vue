@@ -946,7 +946,7 @@ const faqItems = [
 .how__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px 120px;
+  gap: 80px 250px;
 }
 
 .how__card {
@@ -973,7 +973,7 @@ const faqItems = [
 .how__card-title {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  font-size: clamp(20px, 2 vw, 24px);
+  font-size: clamp(20px, 2vw, 24px);
   color: #0B5000;
   letter-spacing: 1px;
 }
@@ -984,6 +984,8 @@ const faqItems = [
   color: #000000;
   line-height: 1.6;
   letter-spacing: 1px;
+  min-height: calc(1.6em * 3);
+}
 }
 
 /* =============================================
