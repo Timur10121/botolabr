@@ -14,7 +14,9 @@
       <!-- Stats -->
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-icon">🤖</div>
+          <div class="stat-icon">
+            <img src="/image/robot.svg"/>
+          </div>
           <div class="stat-body">
             <div class="stat-value">{{ stats.bots }}</div>
             <div class="stat-label">Ботов подключено</div>
