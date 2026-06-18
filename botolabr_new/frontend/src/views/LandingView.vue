@@ -910,7 +910,7 @@ const faqItems = [
   font-family: 'NauryzRedKeds', serif;
   font-weight: 400;
   font-size: clamp(16px, 3vw, 28px);
-  color: #000000;
+  color: #F6FEDE;
   line-height: 2;
   margin: 0 0 24px 0;
   letter-spacing: 1px;
@@ -967,13 +967,13 @@ const faqItems = [
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 16px;
+  padding-top: 22px;
 }
 
 .how__card-title {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  font-size: clamp(16px, 1.8vw, 20px);
+  font-size: clamp(16px, 2.5 vw, 24px);
   color: #0B5000;
   letter-spacing: 1px;
 }
