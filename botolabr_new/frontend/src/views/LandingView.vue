@@ -178,17 +178,23 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__cols">
-        <div class="footer__col footer__col--brand">
-          <a class="footer__logo" @click.prevent="scrollToTop">
-            <img class="footer__logo-icon" src="/icons.svg" alt="Botolabr" @error="e => e.target.style.display='none'" />
-            <span class="footer__logo-text">BOTOLABR</span>
-          </a>
-          <p class="footer__tagline">Конструктор Telegram-ботов<br/>без единой строки кода</p>
-        </div>
-      </div>
-    </footer>
+<footer class="footer">
+  <div class="footer__container">
+    <a class="footer__logo" @click.prevent="scrollToTop">
+      <img
+        class="footer__logo-icon"
+        src="/icons.svg"
+        alt="Botolabr"
+        @error="e => e.target.style.display='none'"
+      />
+      <span class="footer__logo-text">BOTOLABR</span>
+    </a>
+
+    <p class="footer__copyright">
+      © 2026 Botolabr. Все права защищены.
+    </p>
+  </div>
+</footer>
 
   </div>
 </template>
@@ -1083,43 +1089,52 @@ const faqItems = [
 /* =============================================
    FOOTER
 ============================================= */
+/* =============================================
+   FOOTER
+============================================= */
+
 .footer {
   width: 100%;
-  background: #F6FEDE;
-  padding: 0;
+  background: #FB6E17;
+  border-top: 1px solid rgba(11, 80, 0, 0.15);
 }
 
-/* Колонки */
-.footer__cols {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 40px;
-  padding: 48px 5% 40px;
+.footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
-.footer__col--brand { padding-right: 20px; }
 
 .footer__logo {
   display: flex;
   align-items: center;
-  text-decoration: none;
   gap: 12px;
+  text-decoration: none;
   cursor: pointer;
-  margin-bottom: 16px;
 }
-.footer__logo-icon { width: 48px; height: 48px; object-fit: contain; }
+
+.footer__logo-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
 .footer__logo-text {
   font-family: 'Lobelia', serif;
-  font-weight: 400;
   font-size: clamp(20px, 2vw, 28px);
   color: #0B5000;
-  letter-spacing: 0.05em;
 }
-.footer__tagline {
+
+.footer__copyright {
+  margin: 0;
   font-family: 'Roboto Slab', serif;
-  font-size: clamp(12px, 1.2vw, 15px);
-  color: #0B5000;
-  line-height: 1.7;
-  margin-bottom: 24px;
+  font-size: 14px;
+  color: rgba(11, 80, 0, 0.7);
 }
 
 /* =============================================
@@ -1276,13 +1291,12 @@ const faqItems = [
   .faq__left { width: 100%; min-width: unset; }
 
   /* Footer */
-  .footer__top { flex-direction: column; align-items: flex-start; gap: 20px; padding: 32px 20px; }
-  .footer__top-actions { width: 100%; }
-  .footer__btn-register, .footer__btn-login { flex: 1; text-align: center; }
-  .footer__cols { grid-template-columns: 1fr 1fr; gap: 28px; padding: 32px 20px 28px; }
-  .footer__col--brand { grid-column: 1 / -1; padding-right: 0; }
-  .footer__bottom { padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 4px; }
-  .footer__divider-line { margin: 0 20px; }
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
   .br-desktop { display: none; }
 }
