@@ -259,7 +259,7 @@ const vozmozhnostTabs = [
 ]
 const vozContents = {
   analitics: {
-    image: '/image/variant.png',
+    image: '/image/analytic.png',
     desc: 'Соберите собственную аудиторию последователей и организуйте периодические оповещения для укрепления доверия и роста объемов реализации.',
     text: 'Отслеживайте ключевые метрики взаимодействия с ботом в режиме реального времени. Принимайте решения на основе данных.',
     list: [
@@ -270,7 +270,7 @@ const vozContents = {
     ],
   },
   konstructor: {
-    image: '/image/info.png',
+    image: '/image/code.png',
     desc: 'Создавайте чат-ботов без единой строки кода.',
     text: 'Создавайте чат-ботов визуально — без написания кода. Простой drag-and-drop интерфейс для любого уровня подготовки.',
     list: [
@@ -281,7 +281,7 @@ const vozContents = {
     ],
   },
   dialog: {
-    image: '/image/prodazhi.svg',
+    image: '/image/dialog.png',
     desc: 'Выстраивайте естественные диалоги с пользователями.',
     text: 'Бот ведёт клиента по нужному сценарию автоматически.',
     list: [
@@ -801,8 +801,8 @@ const faqItems = [
 }
 
 .vozmozhnost__content-image {
-  width: clamp(200px, 30vw, 500px);
-  height: clamp(150px, 22vw, 380px);
+  width: clamp(300px, 50vw, 450px);
+  height: clamp(300px, 50vw, 450px);
   background: #ADF36C;
   background-size: cover;
   background-position: center;
